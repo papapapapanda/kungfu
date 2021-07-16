@@ -21,10 +21,8 @@ $(function(){
 });
 /*套路のページの画像切り替え */
 $(function(){
-    function preloadImage(path){
-        $("<img>").attr("src",path);
-         }
 
+    function yomikomi(yomikomi_v){$("<img>").attr("src",yomikomi_v);}
 
     $('.baji_pictures').on('click','li>a', function(event){
         event.preventDefault();
@@ -35,80 +33,59 @@ $(function(){
         var imagePath=$this.data('img');
         $('.baji_gallery .mainimage img').attr('src',imagePath);
     })
-    .children("li").each(function(){
-        var imgPath=$(this).children("a").data("img");
-        preloadImage(imgPath);
-    });
+
+    .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
+        yomikomi(images_yomikomi);});
+
 });
  
-$(function(){
+$(function(){function yomikomi(yomikomi_v){$("<img>").attr("src",yomikomi_v);}
     $('.fanzi_pictures').on('click','li>a', function(event){
         event.preventDefault();
         var $this=$(this);
-
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
-
         var imagePath=$this.data('img');
         $('.fanzi_gallery .mainimage img').attr('src',imagePath);
     })
+    .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
+        yomikomi(images_yomikomi);});
 }); 
 
-$(function(){
+$(function(){function yomikomi(yomikomi_v){$("<img>").attr("src",yomikomi_v);}
     $('.tanlang_pictures').on('click','li>a', function(event){
         event.preventDefault();
         var $this=$(this);
-
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
-
         var imagePath=$this.data('img');
         $('.tanlang_gallery .mainimage img').attr('src',imagePath);
     })
-
-
+    .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
+        yomikomi(images_yomikomi);});
 });
 
-$(function(){
+$(function(){function yomikomi(yomikomi_v){$("<img>").attr("src",yomikomi_v);}
     $('.jian_pictures').on('click','li>a', function(event){
         event.preventDefault();
         var $this=$(this);
-
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
-
         var imagePath=$this.data('img');
         $('.jian_gallery .mainimage img').attr('src',imagePath);
     })
-
-
+    .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
+        yomikomi(images_yomikomi);});
 }); 
 
 $(function(){
+    function yomikomi(yomikomi_v){$("<img>").attr("src",yomikomi_v);}
     $('.dao_pictures').on('click','li>a', function(event){
         event.preventDefault();
         var $this=$(this);
-
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
-
         var imagePath=$this.data('img');
         $('.dao_gallery .mainimage img').attr('src',imagePath);
     })
-
-
+    .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
+        yomikomi(images_yomikomi);});
 }); 
 
 
-
-/*ギャラリー　ひな形　
-$(function(){
-    $('._pictures').on('click','li>a', function(event){
-        event.preventDefault();
-        var $this=$(this);
-
-        $this.parent().siblings().removeClass('selected').end().addClass('selected');
-
-        var imagePath=$this.data('img');
-        $('._gallery .mainimage img').attr('src',imagePath);
-    })
-
-
-}); 
-*/
