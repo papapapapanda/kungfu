@@ -52,10 +52,7 @@ body{ background-color: linen; font-family: 'DotGothic16', sans-serif;
 
 /*三番目のセクション*/
 .practice_space_time{
-    background-image: url(image/opc50%_datoufu_2_horizontal_inversion_kirinuki.png);
-    background-position: left;
-    background-size:contain;
-    background-repeat: no-repeat;
+  
     background-color: rgba(245, 168, 2, 0.877);
     width: 100%;
      
@@ -396,16 +393,6 @@ margin-bottom: 2%;
     margin-top: 13%;
     clear:both;
    }
-/**
- * RESPONSIVE: スマートフォン向けウィンドウ幅600px以下
- */
-@media screen and (max-width:600px) {
-	.gallery {
-		width: 96%;
-		margin: 30px 0;
-		padding: 20px 2%;
-	}
-}
 
 
 
@@ -425,7 +412,10 @@ margin-bottom: 2%;
 /*アサイド*/
 aside{ width: 29%; }
 #titile_position{top:20%;}
-.practice_space_time{background-image: url(image/opc50%_datoufu_2_horizontal_inversion_kirinuki.png), 
-    url(image/gongbu_datoufu.png);background-position: left,right;}
-    }
-
+/*散打のギャラリー*/
+.gallery {
+    width: 96%;
+    margin: 30px 0;
+    padding: 20px 2%;
+}
+}
