@@ -31,7 +31,7 @@ $(function(){
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
 
         var imagePath=$this.data('img');
-        $('.baji_gallery .mainimage img').attr('src',imagePath);
+        $('.baji_menpai_img .mainimage img').attr('src',imagePath);
     })
 
     .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
@@ -45,7 +45,7 @@ $(function(){function yomikomi(yomikomi_v){$("<img>").attr("src",yomikomi_v);}
         var $this=$(this);
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
         var imagePath=$this.data('img');
-        $('.fanzi_gallery .mainimage img').attr('src',imagePath);
+        $('.fanzi_menpai_img .mainimage img').attr('src',imagePath);
     })
     .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
         yomikomi(images_yomikomi);});
@@ -57,7 +57,7 @@ $(function(){function yomikomi(yomikomi_v){$("<img>").attr("src",yomikomi_v);}
         var $this=$(this);
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
         var imagePath=$this.data('img');
-        $('.tanlang_gallery .mainimage img').attr('src',imagePath);
+        $('.tanlang_menpai_img .mainimage img').attr('src',imagePath);
     })
     .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
         yomikomi(images_yomikomi);});
@@ -69,7 +69,7 @@ $(function(){function yomikomi(yomikomi_v){$("<img>").attr("src",yomikomi_v);}
         var $this=$(this);
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
         var imagePath=$this.data('img');
-        $('.jian_gallery .mainimage img').attr('src',imagePath);
+        $('.jian_menpai_img .mainimage img').attr('src',imagePath);
     })
     .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
         yomikomi(images_yomikomi);});
@@ -82,7 +82,7 @@ $(function(){
         var $this=$(this);
         $this.parent().siblings().removeClass('selected').end().addClass('selected');
         var imagePath=$this.data('img');
-        $('.dao_gallery .mainimage img').attr('src',imagePath);
+        $('.dao_menpai_img .mainimage img').attr('src',imagePath);
     })
     .children("li").each(function(){var images_yomikomi=$(this).children("a").data("img");
         yomikomi(images_yomikomi);});
