@@ -415,14 +415,20 @@ margin-bottom: 2%;
 aside{ width: 29%; }
 #titile_position{top:20%;}
 
+/*套路の画像*/
 .mini_menpai_imgs li img{
-    width:200%;
+    width:120%;
 }
 .mainimage>img{width:70%;
 }
 .mini_menpai_imgs li {
 	float: left;
-	margin: 0 60px 10px 60px;
+	margin: 0 10px 10px 10px;
+}
+
+.mini_menpai_imgs li:first-child {
+	float: left;
+	margin: 0 10px 10px 270px;
 }
 
 
