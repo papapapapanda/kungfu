@@ -94,6 +94,7 @@ body{ background-color: linen; font-family: 'DotGothic16', sans-serif;
     justify-content: space-evenly;
     display:flex;
     margin-top:3%;
+ 
     }
 
 /*写真の外枠*/
@@ -184,8 +185,8 @@ footer{
   .fukidashi:before {
     content: "";
     position: absolute;
-    top: 85%;
-    left: 40%;
+    top: 90%;
+    left: 60%;
     border: 14px solid transparent;
     border-top: 22px solid rgb(255, 168, 168);
 
@@ -360,7 +361,7 @@ margin-bottom: 2%;
 
 
 /*　套路のページ */
- .gallery {width: 90%;
+ .menpai_img {width: 90%;
 	margin-right:auto;
     margin-left: auto;
 	padding: 2%;
@@ -374,10 +375,10 @@ margin-bottom: 2%;
 }
 .mainimage>img{width:100%;
 }
-.thumbnails {
+.mini_menpai_imgs {
 	margin: 10px 0 0 0;
 }
-.thumbnails li {
+.mini_menpai_imgs li {
 	float: left;
 	margin: 0 0 5px 0;
 	border: 4px solid #bdd4dd;
@@ -385,7 +386,7 @@ margin-bottom: 2%;
 }
 
 
-.thumbnails li.selected {
+.mini_menpai_imgs li.selected {
 	border: 2px solid #fdeeaa ;
 }
 .taolu_float_clear{
@@ -399,6 +400,12 @@ margin-bottom: 2%;
 
 /*メディアクエリ　デスクトップの指定*/
 @media(min-width: 600px){
+
+
+
+
+
+
 /*全体のレイアウト*/
 .container{display:flex;justify-content: space-between;
         margin-bottom: 4rem; padding:1rem 2.5rem 2.5rem;}    
@@ -411,5 +418,15 @@ margin-bottom: 2%;
 /*アサイド*/
 aside{ width: 29%; }
 #titile_position{top:20%;}
+
+/*套路のミニ画像*/
+.mini_menpai_imgs li {
+	float: left;
+	margin: 10px 10px 5px 0;
+	border: 4px solid #bdd4dd;
+    border-style: double;
+    width: 10%;
+    height: auto;
+}
 
 }
