@@ -21,6 +21,11 @@ $(function(){
 });
 /*套路のページの画像切り替え */
 $(function(){
+    function preloadImage(path){
+        $("<img>").attr("src",path);
+         }
+
+
     $('.baji_pictures').on('click','li>a', function(event){
         event.preventDefault();
         var $this=$(this);
@@ -30,6 +35,10 @@ $(function(){
         var imagePath=$this.data('img');
         $('.baji_gallery .mainimage img').attr('src',imagePath);
     })
+    .children("li").each(function(){
+        var imgPath=$(this).children("a").data("img");
+        preloadImage(imgPath);
+    });
 });
  
 $(function(){
@@ -85,6 +94,7 @@ $(function(){
 
 
 }); 
+
 
 
 /*ギャラリー　ひな形　
