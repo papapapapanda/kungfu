@@ -1,4 +1,4 @@
-body{ background-color: linen; font-family: 'DotGothic16', sans-serif;
+body{margin-right: auto;    margin-left : auto;    width:320px;  background-color: linen; font-family: 'DotGothic16', sans-serif;
     letter-spacing:1px;line-height:170%;}
 /*タイトル（最上段）セクション*/
 .title_section{
@@ -14,10 +14,9 @@ body{ background-color: linen; font-family: 'DotGothic16', sans-serif;
       }
 .title_section p{
     color:beige;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bolder;
-    
-    text-shadow: 3px 3px 3px rgb(63, 20, 20);
+     text-shadow: 3px 3px 3px rgb(63, 20, 20);
    position:relative;
    top:25px;
 }
@@ -34,17 +33,15 @@ body{ background-color: linen; font-family: 'DotGothic16', sans-serif;
     background-repeat: no-repeat;
     background-color: antiquewhite;
     width: 100%;
- 
      
     color:rgb(105, 46, 19);
-    font-size:large;
-    font-weight:bold;
-        text-shadow: 1.5px 1.5px 1.5px rgb(253, 136, 3); 
+    text-shadow: 1.5px 1.5px 1.5px rgb(253, 136, 3); 
 }
 
 .short_introduction p{
-  padding: 3% 0 3% 0;
-    font-size:larger;
+  padding: 1% 0 1% 0;
+  font-weight:bold;
+    font-size:large;
     text-align: center ;
     width: 100%;
 
@@ -82,8 +79,7 @@ body{ background-color: linen; font-family: 'DotGothic16', sans-serif;
 
 .practice_space_time th{
     text-align: center;
-   padding: 0 1% 0 1%;
-   vertical-align: middle;
+      vertical-align: middle;
     }
 
 
@@ -146,8 +142,7 @@ body{ background-color: linen; font-family: 'DotGothic16', sans-serif;
 }
 
 .news_section h2{
-    font-size: large;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -225,89 +220,32 @@ text-shadow: 1.5px 1.5px 1.5px whitesmoke; font-weight:bolder;
  
 /*アニメーション効果*/
 @keyframes yurayura_anime{0%{transform:translate(0, 0) rotate(0deg);}25%{transform:translate(0, 0) rotate(5deg);}50%{transform:translate(0, 0) rotate(0deg);}75%{transform:translate(0, 0) rotate(-5deg);}  100% {transform:translate(0, 0)rotate(0deg);}}
-
 @keyframes tenmetsu_anime{0%{opacity: 1;} 25%{opacity: 0.75;} 50%{opacity: 0.5;}  75%{opacity: 0.75;}100%{opacity: 1;}}
-
 @keyframes kakudai_anime{0%{transform: scale(1)} 50%{transform: scale(0.85)}  100%{transform: scale(1)}}
-
-
-@keyframes flame_anime1
-{0%{border-radius: 50% 20% 51% 80%/10% 50% 70% 1%;} 
-25%{border-radius:80% 50% 20% 51%/1% 10% 50% 70%;}  
-50%{border-radius:51% 80% 50% 20%/70% 1% 10% 50%;} 
-75%{border-radius:20% 51% 80% 50%/50% 70% 1% 10%;}      
-100%{border-radius:50% 20% 51% 80%/10% 50% 70% 1%;} }
-
-@keyframes flame_anime2
-{0%{border-radius: 50% 20% 50% 30%/10% 50% 70% 50%;} 
-25%{border-radius:30% 50% 20% 50%/50% 10% 50% 70%;}  
-50%{border-radius:50% 30% 50% 20%/70% 50% 10% 50%;} 
-75%{border-radius:20% 50% 30% 50%/50% 70% 50% 10%;}      
+@keyframes flame_anime1{0%{border-radius: 50% 20% 51% 80%/10% 50% 70% 1%;} 25%{border-radius:80% 50% 20% 51%/1% 10% 50% 70%;}  50%{border-radius:51% 80% 50% 20%/70% 1% 10% 50%;} 75%{border-radius:20% 51% 80% 50%/50% 70% 1% 10%;}      100%{border-radius:50% 20% 51% 80%/10% 50% 70% 1%;} }
+@keyframes flame_anime2{0%{border-radius: 50% 20% 50% 30%/10% 50% 70% 50%;} 25%{border-radius:30% 50% 20% 50%/50% 10% 50% 70%;}  50%{border-radius:50% 30% 50% 20%/70% 50% 10% 50%;} 75%{border-radius:20% 50% 30% 50%/50% 70% 50% 10%;}     
 100%{border-radius:50% 20% 50% 30%/10% 50% 70% 50%;} }
-
-@keyframes flame_anime3
-{0%{border-radius: 50% 20% 50% 50%/10% 50% 70% 50%;} 
-25%{border-radius:50% 50% 20% 50%/50% 10% 50% 70%;}  
-50%{border-radius:50% 50% 50% 20%/70% 50% 10% 50%;} 
-75%{border-radius:20% 50% 50% 50%/50% 70% 50% 10%;}      
+@keyframes flame_anime3{0%{border-radius: 50% 20% 50% 50%/10% 50% 70% 50%;} 25%{border-radius:50% 50% 20% 50%/50% 10% 50% 70%;}  50%{border-radius:50% 50% 50% 20%/70% 50% 10% 50%;} 75%{border-radius:20% 50% 50% 50%/50% 70% 50% 10%;}    
 100%{border-radius:50% 20% 50% 50%/10% 50% 70% 50%;} }
-
-@keyframes flame_anime4
-{0%{border-radius: 50% 0% 50% 50%;} 
-25%{border-radius:50% 50% 0% 50%;}  
-50%{border-radius:50% 50% 50% 0%;} 
-75%{border-radius:0% 50% 50% 50%;}      
-100%{border-radius:50% 0% 50% 50%;}}
+@keyframes flame_anime4{0%{border-radius: 50% 0% 50% 50%;} 25%{border-radius:50% 50% 0% 50%;}  50%{border-radius:50% 50% 50% 0%;} 75%{border-radius:0% 50% 50% 50%;} 100%{border-radius:50% 0% 50% 50%;}}
 
 /*華の枠組みアニメーション*/
-@keyframes flame_anime5
-{0%{border-radius: 100% 0% 100% 100%;} 
-25%{border-radius:100% 100% 0% 100%;}  
-50%{border-radius:100% 100% 100% 0%;} 
-75%{border-radius:0% 100% 100% 100%;}      
-100%{border-radius:100% 0% 100% 100%;}}
-
-@keyframes flame_anime6
-{0%{border-radius:0% 100% 100% 100%;}      
-25%{border-radius:100% 100% 100% 0%;}
-50%{border-radius:100% 100% 0% 100%;}
-75%{border-radius:100% 0% 100% 100%;}
-100%{border-radius:0% 100% 100% 100%;}}
-@keyframes flame_anime7
-{0%{border-radius:100% 100% 0% 100%;}  
-25%{border-radius:100% 0% 100% 100%;} 
-50%{border-radius:0% 100% 100% 100%;}      
-75%{border-radius:100% 100% 100% 0%;}
-100%{border-radius: 100% 100% 0% 100%;}}
-
-@keyframes flame_anime8
-{0%{border-radius:100% 100% 100% 0%;} 
-25%{border-radius:0% 100% 100% 100%;}      
-50%{border-radius:100% 0% 100% 100%;}
-75%{border-radius:100% 100% 0% 100%;}
-100%{border-radius:100% 100% 100% 0%;}}
+@keyframes flame_anime5{0%{border-radius: 100% 0% 100% 100%;} 25%{border-radius:100% 100% 0% 100%;}  50%{border-radius:100% 100% 100% 0%;} 75%{border-radius:0% 100% 100% 100%;}  100%{border-radius:100% 0% 100% 100%;}}
+@keyframes flame_anime6{0%{border-radius:0% 100% 100% 100%;} 25%{border-radius:100% 100% 100% 0%;}50%{border-radius:100% 100% 0% 100%;}75%{border-radius:100% 0% 100% 100%;}100%{border-radius:0% 100% 100% 100%;}}
+@keyframes flame_anime7{0%{border-radius:100% 100% 0% 100%;}  25%{border-radius:100% 0% 100% 100%;} 50%{border-radius:0% 100% 100% 100%;} 75%{border-radius:100% 100% 100% 0%;}100%{border-radius: 100% 100% 0% 100%;}}
+@keyframes flame_anime8{0%{border-radius:100% 100% 100% 0%;} 25%{border-radius:0% 100% 100% 100%;}50%{border-radius:100% 0% 100% 100%;}75%{border-radius:100% 100% 0% 100%;}100%{border-radius:100% 100% 100% 0%;}}
 
   
 /*サークル紹介のページ*/
-
 .common_flame{
     border-style:outset;
     border-width: 15px;
     border-color:rgba(255, 135, 155, 0.596) rgba(0, 89, 255, 0.733) rgba(214, 0, 0, 0.705) rgba(255, 238, 0, 0.644);
   padding: 2%;
   background-color:cornsilk;
-margin-bottom: 2%;  
-}
-  
+margin-bottom: 2%;  }
   .club_img{ width:30%; animation-iteration-count:infinite; animation-timing-function:linear; animation-duration:15s;}
-  .border_radius_anime1{  animation-name: flame_anime1;}
-  .border_radius_anime2{  animation-name: flame_anime2;}
-  .border_radius_anime3{  animation-name: flame_anime3;}
-  .border_radius_anime4{  animation-name: flame_anime4;}
-  .border_radius_anime5{  animation-name: flame_anime5;}
-  .border_radius_anime6{  animation-name: flame_anime6;}
-  .border_radius_anime7{  animation-name: flame_anime7;}
-  .border_radius_anime8{  animation-name: flame_anime8;}
+  .border_radius_anime1{  animation-name: flame_anime1;}  .border_radius_anime2{  animation-name: flame_anime2;}  .border_radius_anime3{  animation-name: flame_anime3;}  .border_radius_anime4{  animation-name: flame_anime4;}  .border_radius_anime5{  animation-name: flame_anime5;}  .border_radius_anime6{  animation-name: flame_anime6;}  .border_radius_anime7{  animation-name: flame_anime7;}  .border_radius_anime8{  animation-name: flame_anime8;}
   .text_part h1{
     color:rgb(105, 46, 19);
     font-size:x-large;
@@ -328,9 +266,8 @@ margin-bottom: 2%;
   #flower_anime_bottom {  margin-top: 1.2%;}
   .coach_img_part{text-align: center;}
   
-
   .common_flame #history_table th{
-    font-size: large;
+    font-size: 15px;
     color:rgb(78, 88, 99);
     table-layout: fixed;
     border-style:outset;
@@ -341,7 +278,6 @@ margin-bottom: 2%;
     margin-right:auto;
 }
        
-
 /*散打のページ*/
   .item_img_1,.item_img_2,.item_img_3,.item_img_4,.item_img_5,.item_img_6_1,.item_img_6_2,.item_img_7
   {shape-outside: circle(); border-radius: 40%;margin:2%;}
@@ -361,36 +297,23 @@ margin-bottom: 2%;
 
 
 /*　套路のページ */
- .menpai_img {
+ .menpai_img {width: 90%;
 	margin-right:auto;
-    margin-left: auto;
- 
+    margin-left:auto;
+	padding: 2%;
+	background: #ffdd80;
+	border-radius: 3px;}
+.mainimage{    text-align: center;}
+.mainimage>img{width:100%;}
 
-
-}
-.mainimage{
-    text-align: center;
-}
-.mainimage>img{width:100%;
-}
-.mini_menpai_imgs {
-	margin: 10px 0 0 0;
-}
-.mini_menpai_imgs li {
-	float: left;
-	margin: 0 10px 10px 0;
-}
-
-
-.mini_menpai_imgs li.selected {
-	border: 2px solid #fdeeaa ;
-}
-.taolu_float_clear{
-    margin-top: 13%;
-    clear:both;
-   }
-
-
+.mini_menpai_imgs li {float: left;
+	margin: 5px 2.5px 5px 2.5px;
+	border: 4px solid #bdd4dd;
+    border-style: double;}
+.mini_menpai_imgs li.selected {	border: 2px solid #fdeeaa ;}
+.meipai_name_title{margin-top: 13%; }
+.taolu_img_secondline_float_clear{ clear:both;}
+.mini_imgs_block{ margin-left:10px;}
 
 
 
@@ -400,37 +323,69 @@ margin-bottom: 2%;
 
 
 
-
-
 /*全体のレイアウト*/
+body{width:1178px; }
+ 
+
 .container{display:flex;justify-content: space-between;
         margin-bottom: 4rem; padding:1rem 2.5rem 2.5rem;}    
 /*メイン*/
     main{width: 70%;
         margin-bottom:0;}
+/*一番目のセクション*/
+.title_section p{
+            font-size:45px;margin-bottom: 15px;}
+
+ /*二番目のセクション*/           
+.short_introduction p{
+            padding: 3% 0 3% 0;
+            font-size:x-large; }
 /*四番目のセクション 見学募集*/
-    .news_section{background-image:url(image/sword_2.png),url(image/sanda_3.png); 
+.news_section{background-image:url(image/sword_2.png),url(image/sanda_3.png); 
         background-position: right,left;}
+.news_section h2{
+            font-size: large;
+            margin-bottom: 10px;
+        }   
 /*アサイド*/
 aside{ width: 29%; }
 #titile_position{top:20%;}
 
-/*套路の画像*/
-.mini_menpai_imgs li img{
-    width:120%;
-}
-.mainimage>img{width:70%;
+/*套路のミニ画像*/
+.taolu_img_secondline_float_clear{
+   display: none;
 }
 .mini_menpai_imgs li {
 	float: left;
-	margin: 0 10px 10px 10px;
+	margin: 10px 10px 5px 0;
+	border: 4px solid #bdd4dd;
+    border-style: double;
+    width: 10%;
+    height: auto;
 }
 
-.mini_menpai_imgs li:first-child {
-	float: left;
-	margin: 0 10px 10px 270px;
-}
+/*　套路のページ */
+.menpai_img {width: 90%;
+	margin-right:auto;
+    margin-left:auto;
+	padding: 2%;
+	background: #ffdd80;
+	border-radius: 3px;}
+.mainimage{    text-align: center;}
+.mainimage>img{width:100%;}
+.mini_menpai_imgs li {
+	margin: 5px 10px 5px 10px;
+    width:12%;}
+.mini_menpai_imgs li.selected {
+width:11%;}
+.meipai_name_title{margin-top: 13%; }
+.taolu_img_secondline_float_clear{ clear:both;}
+.mini_imgs_block{ margin-left:40px;}
 
 
+/*サークル紹介　年表*/
+.common_flame #history_table th{
+    font-size: large;  }
 
+       
 }
