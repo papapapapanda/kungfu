@@ -1,167 +1,38 @@
+/*ページ全体　共通CSS body aside フッター　更新履歴　アニメーション*/
 body{margin-right: auto;    margin-left : auto;    width:320px;  background-color: linen; font-family: 'DotGothic16', sans-serif;
     letter-spacing:1px;line-height:170%;}
-/*タイトル（最上段）セクション*/
-.title_section{
-     background-image: url(image/top_picture_s.png);
-    background-repeat: no-repeat;
-    padding-top:10%;
-    width:100%;
-    background-position: center center;
-    background-size:cover;
-    text-align: center; 
-    position: relative;
-
-      }
-.title_section p{
-    color:beige;
-    font-size: x-large;
-    font-weight: bolder;
-     text-shadow: 3px 3px 3px rgb(63, 20, 20);
-   position:relative;
-   top:25px;
-}
-#title_logo{
-    width: 100%;
-    
-}
-
-/*二番目のセクション*/
-.short_introduction{
-    background-image: url(image/punch_longshot_2.png);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-color: antiquewhite;
-    width: 100%;
-     
-    color:rgb(105, 46, 19);
-    text-shadow: 1.5px 1.5px 1.5px rgb(253, 136, 3); 
-}
-
-.short_introduction p{
-  padding: 1% 0 1% 0;
-  font-weight:bold;
-    font-size:large;
-    text-align: center ;
-    width: 100%;
-
-}
-
-/*三番目のセクション*/
-.practice_space_time{
-  
-    background-color: rgba(245, 168, 2, 0.877);
-    width: 100%;
-     
-    color:rgb(240, 255, 255);
-     font-weight:bolder;
-        text-shadow: 1.5px 1.5px 1.5px rgb(12, 4, 4);
-}
-#table_position{
-    margin: 0 2% 0 2%;
-    padding-bottom: 2%;
-}
-.practice_space_time table{
-    width:100%;
-    border-collapse: collapse;
-
-   }
-
-.practice_space_time td, th{
-     border: 1px white solid; 
-     }
-
-.practice_space_time caption{
-    text-align: center;
-    font-size: larger;
-    margin: 2%;
-    }
-
-.practice_space_time th{
-    text-align: center;
-      vertical-align: middle;
-    }
-
-
-
-/*三段目の写真*/
-.img_pictures{
-    opacity: 0.7;
-    justify-content: space-evenly;
-    display:flex;
-    margin-top:3%;
- 
-    }
-
-/*写真の外枠*/
-.img_border_radius_1{
-    width:30%;
-    object-fit: cover;
-    border-radius: 100% 70% 50% 100%/30% 70% 70% 90%;
- 
-}
-
-.img_border_radius_2{
-    width:20%;
-    object-fit: cover;
-    border-radius: 100% 50% 70% 80%/90% 70% 70% 50%;
-   
-}
-
-.img_border_radius_3{
-    width:40%;
-    object-fit: cover;
-    border-radius: 100% 50% 70% 80%/90% 70% 70% 50%;
-    
-}
-
-
-/*四番目のセクション 見学募集*/
-.news_section{
-    background-color:rgba(253, 219, 124, 0.651);
-    width: 100%;   
-    font-weight:bolder;
-    border: solid 1px gray;
-    
-    color:rgb(105, 46, 19);
-    text-shadow: 1.5px 1.5px 1.5px rgb(253, 136, 3); 
-    text-align: center;
-    margin: 4px 2px 4px 2px;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-image:url(image/jian_demonstration.png),url(image/dao_saya.png);
-    background-position: left,right;
-    
-}
-.news_section h1{
-    margin-top: 3px;
-    font-size: xx-large;
-    text-shadow: 1.5px 1.5px 1.5px white; 
-    color:rgb(250, 37, 0);
-    animation-name: kakudai_anime;  animation-duration:3s;  animation-iteration-count:infinite;   animation-timing-function:linear; 
-}
-
-.news_section h2{
-    margin-bottom: 5px;
-}
-
-
 /*フッター*/
 footer{	
     background-color: lightgray;
     color:grey;    
     text-align: center;
     font-weight:bolder;
-    
-    text-shadow: 1px 1px 1px whitesmoke;
-}
-
-
+    text-shadow: 1px 1px 1px whitesmoke;}
+/* 更新履歴*/
+.kousin_practice_space_time{
+    background-color: rgba(248, 182, 187, 0.877);
+    width: 100%;
+    color:rgb(197, 87, 138);
+    font-weight:bolder;
+    text-shadow: 1.5px 1.5px 1.5px rgb(12, 4, 4);}
+#kousin_table_position{
+    margin: 0 2% 0 2%;
+    padding-bottom: 0.5%;}
+.kousin_practice_space_time table{
+    width:100%;
+    border-collapse: collapse;}
+ .kousin_practice_space_time td, th{
+     border: 1px rgb(129, 47, 58) solid; }
+ .kousin_practice_space_time caption{
+    text-align: center;
+    font-size: larger;}
+.kousin_practice_space_time th{
+    text-align: center;
+      vertical-align: middle;}
 
 /*aside*/
 /*獅子舞メニューバー*/
 #lion_menu{width:100%; text-align: center;}
-
 .fukidashi{
     position: relative;
     display: inline-block;
@@ -174,28 +45,19 @@ footer{
     background: rgb(255, 168, 168);
     border-radius: 40% 90% 40% 90%;
     white-space: nowrap;
-    animation-name: yurayura_anime;  animation-duration:2.2s;  animation-iteration-count:infinite;   animation-timing-function:linear;  
-  }
-  
-  .fukidashi:before {
+    animation-name: yurayura_anime;  animation-duration:2.2s;  animation-iteration-count:infinite;   animation-timing-function:linear; }
+.fukidashi:before {
     content: "";
     position: absolute;
     top: 90%;
     left: 60%;
     border: 14px solid transparent;
-    border-top: 22px solid rgb(255, 168, 168);
-
-  }
-  
+    border-top: 22px solid rgb(255, 168, 168);}
 /*メニューの一番上のボタンの基本の設定*/
 .dropdown-menu { cursor: pointer; 	width: 100%;	list-style: none;  
-text-shadow: 1.5px 1.5px 1.5px whitesmoke; font-weight:bolder;
-}
-
+text-shadow: 1.5px 1.5px 1.5px whitesmoke; font-weight:bolder;}
 /*メニューの一番上のボタンの中身の設定 */
 .dropdown-menu > #menu1{cursor: pointer; display: block;	padding: 5px 0px 5px 40px;}
-
-
 /* メニュー一覧の基本設定 */
 .dropdown-menu > .items {	display: none;	margin: 2px 0 0 0;	width: 95%;list-style: none; margin-left: auto; margin-right: auto;}
 /* メニュー一覧のホバーとリンクアクティブの設定 */
@@ -204,20 +66,17 @@ text-shadow: 1.5px 1.5px 1.5px whitesmoke; font-weight:bolder;
 .menulist{display: block;	padding: 5px 0;	background: rgb(218, 22, 22);	color:rgb(196, 148, 28); font-size: 25px;	text-align: center;	margin: 2px 0 0 0;border-radius: 5px;      }
 .menulist:hover {background: rgb(38, 175, 91); color: rgba(255, 0, 34, 0.658);}
 
-
-
+/* Twitter*/
 #sns_link h1 {
-    
     color:rgb(253, 152, 0);
     text-shadow: 1px 1px 1px rgb(116, 40, 4); 
     font-size: x-large;
-     text-align: center;
+    text-align: center;
     border-radius: 10%;
     margin-top: 20px;
+    animation-name: tenmetsu_anime;  animation-duration:1s;  animation-iteration-count:infinite;   animation-timing-function:linear;}
 
-    animation-name: tenmetsu_anime;  animation-duration:1s;  animation-iteration-count:infinite;   animation-timing-function:linear; 
-    }
- 
+
 /*アニメーション効果*/
 @keyframes yurayura_anime{0%{transform:translate(0, 0) rotate(0deg);}25%{transform:translate(0, 0) rotate(5deg);}50%{transform:translate(0, 0) rotate(0deg);}75%{transform:translate(0, 0) rotate(-5deg);}  100% {transform:translate(0, 0)rotate(0deg);}}
 @keyframes tenmetsu_anime{0%{opacity: 1;} 25%{opacity: 0.75;} 50%{opacity: 0.5;}  75%{opacity: 0.75;}100%{opacity: 1;}}
@@ -228,25 +87,187 @@ text-shadow: 1.5px 1.5px 1.5px whitesmoke; font-weight:bolder;
 @keyframes flame_anime3{0%{border-radius: 50% 20% 50% 50%/10% 50% 70% 50%;} 25%{border-radius:50% 50% 20% 50%/50% 10% 50% 70%;}  50%{border-radius:50% 50% 50% 20%/70% 50% 10% 50%;} 75%{border-radius:20% 50% 50% 50%/50% 70% 50% 10%;}    
 100%{border-radius:50% 20% 50% 50%/10% 50% 70% 50%;} }
 @keyframes flame_anime4{0%{border-radius: 50% 0% 50% 50%;} 25%{border-radius:50% 50% 0% 50%;}  50%{border-radius:50% 50% 50% 0%;} 75%{border-radius:0% 50% 50% 50%;} 100%{border-radius:50% 0% 50% 50%;}}
-
 /*華の枠組みアニメーション*/
 @keyframes flame_anime5{0%{border-radius: 100% 0% 100% 100%;} 25%{border-radius:100% 100% 0% 100%;}  50%{border-radius:100% 100% 100% 0%;} 75%{border-radius:0% 100% 100% 100%;}  100%{border-radius:100% 0% 100% 100%;}}
 @keyframes flame_anime6{0%{border-radius:0% 100% 100% 100%;} 25%{border-radius:100% 100% 100% 0%;}50%{border-radius:100% 100% 0% 100%;}75%{border-radius:100% 0% 100% 100%;}100%{border-radius:0% 100% 100% 100%;}}
 @keyframes flame_anime7{0%{border-radius:100% 100% 0% 100%;}  25%{border-radius:100% 0% 100% 100%;} 50%{border-radius:0% 100% 100% 100%;} 75%{border-radius:100% 100% 100% 0%;}100%{border-radius: 100% 100% 0% 100%;}}
 @keyframes flame_anime8{0%{border-radius:100% 100% 100% 0%;} 25%{border-radius:0% 100% 100% 100%;}50%{border-radius:100% 0% 100% 100%;}75%{border-radius:100% 100% 0% 100%;}100%{border-radius:100% 100% 100% 0%;}}
 
+
+
+
+
+
+
+/*index インデックスページ*/
+/*サークル名とサークルロゴ*/
+.title_section{
+     background-image: url(image/top_picture_s.png);
+    background-repeat: no-repeat;
+    padding-top:10%;
+    width:100%;
+    background-position: center center;
+    background-size:cover;
+    text-align: center; 
+    position: relative;}
+.title_section p{
+    color:beige;
+    font-size: x-large;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px rgb(63, 20, 20);
+    position:relative;
+    top:25px;}
+#title_logo{width: 100%;}
+
+/*サークルの短い紹介*/
+.short_introduction{
+    background-image: url(image/punch_longshot_2.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+    width: 100%;     
+    color:rgb(105, 46, 19);
+    text-shadow: 1.5px 1.5px 1.5px rgb(253, 136, 3); }
+.short_introduction p{
+    padding: 1% 0 1% 0;
+    font-weight:bold;
+    font-size:large;
+    text-align: center ;
+    width: 100%;}
+
+/*活動スケジュール*/
+.practice_space_time{
+    background-color: rgba(245, 168, 2, 0.877);
+    width: 100%; 
+    color:rgb(240, 255, 255);
+    font-weight:bolder;
+    text-shadow: 1.5px 1.5px 1.5px rgb(12, 4, 4);}
+#table_position{
+    margin: 0 2% 0 2%;
+    padding-bottom: 2%;}
+.practice_space_time table{
+    width:100%;
+    border-collapse: collapse;}
+.practice_space_time td, th{
+     border: 1px white solid;}
+.practice_space_time caption{
+    text-align: center;
+    font-size: larger;
+    margin: 2%;}
+.practice_space_time th{
+    text-align: center;
+    vertical-align: middle;}
+
+/*イメージ写真　三つ*/
+.img_pictures{
+    opacity: 0.7;
+    justify-content: space-evenly;
+    display:flex;
+    margin-top:3%;}
+.img_border_radius_1{
+    width:30%;
+    object-fit: cover;
+    border-radius: 100% 70% 50% 100%/30% 70% 70% 90%;}
+.img_border_radius_2{
+    width:20%;
+    object-fit: cover;
+    border-radius: 100% 50% 70% 80%/90% 70% 70% 50%;}
+.img_border_radius_3{
+    width:40%;
+    object-fit: cover;
+    border-radius: 100% 50% 70% 80%/90% 70% 70% 50%;}
+
+/*見学・体験　大歓迎*/
+.news_section{
+    background-color:rgba(253, 219, 124, 0.651);
+    width: 100%;   
+    font-weight:bolder;
+    border: solid 1px gray;
+    color:rgb(105, 46, 19);
+    text-shadow: 1.5px 1.5px 1.5px rgb(253, 136, 3); 
+    text-align: center;
+    margin: 4px 2px 4px 2px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image:url(image/jian_demonstration.png),url(image/dao_saya.png);
+    background-position: left,right;}
+.news_section h1{
+    margin-top: 3px;
+    font-size: xx-large;
+    text-shadow: 1.5px 1.5px 1.5px white; 
+    color:rgb(250, 37, 0);
+    animation-name: kakudai_anime;  animation-duration:3s;  animation-iteration-count:infinite;   animation-timing-function:linear; }
+.news_section h2{margin-bottom: 5px;}
+
+/*夏休み自主練会のお知らせ*/
+.summer_info{
+    width: 100%;   
+    font-weight:bolder;
+    border: solid 1px gray;
+    color:rgb(105, 46, 19);
+    text-shadow: 1.5px 1.5px 1.5px rgb(253, 136, 3); 
+    text-align: center;
+    margin: 4px 2px 4px 2px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image:url(image/jian_demonstration.png),url(image/dao_saya.png);
+    background-position: left,right;}
+.summer_info h1{
+    margin-top: 3px;
+    font-size: xx-large;
+    text-shadow: 1.5px 1.5px 1.5px white; 
+    color:indianred;
+    animation-name: kakudai_anime;  animation-duration:3s;  animation-iteration-count:infinite;   animation-timing-function:linear; }
+.summer_info h2{margin-bottom: 5px;}
+
+/*８月　自主練スケジュール*/
+.summer_practice_space_time_2{
+    background-color:rgb(250, 211, 137);
+    width: 100%; 
+    color:rgb(32, 83, 134);
+    font-weight:bolder;
+    text-shadow: 1.5px 1.5px 1.5px rgb(10, 182, 173);}
+#summer_table_position_2{
+    margin: 0 2% 0 2%;
+    padding-bottom: 2%;}
+.summer_practice_space_time_2 table{
+    width:100%;
+    border-collapse: collapse;}
+.summer_practice_space_time_2 td, th{
+     border: 1px goldenrod solid;}
+.summer_practice_space_time_2 caption{
+    text-align: center;
+    font-size: larger;
+    margin: 2%;}
+.summer_practice_space_time_2 th{
+    text-align: center;
+    vertical-align: middle;}
+ 
+
+
+
+
   
-/*サークル紹介のページ*/
+/*our_introduction サークル紹介のページ*/
+/*サークルの紹介*/
 .common_flame{
     border-style:outset;
     border-width: 15px;
     border-color:rgba(255, 135, 155, 0.596) rgba(0, 89, 255, 0.733) rgba(214, 0, 0, 0.705) rgba(255, 238, 0, 0.644);
-  padding: 2%;
-  background-color:cornsilk;
-margin-bottom: 2%;  }
-  .club_img{ width:30%; animation-iteration-count:infinite; animation-timing-function:linear; animation-duration:15s;}
-  .border_radius_anime1{  animation-name: flame_anime1;}  .border_radius_anime2{  animation-name: flame_anime2;}  .border_radius_anime3{  animation-name: flame_anime3;}  .border_radius_anime4{  animation-name: flame_anime4;}  .border_radius_anime5{  animation-name: flame_anime5;}  .border_radius_anime6{  animation-name: flame_anime6;}  .border_radius_anime7{  animation-name: flame_anime7;}  .border_radius_anime8{  animation-name: flame_anime8;}
-  .text_part h1{
+    padding: 2%;
+    background-color:cornsilk;
+    margin-bottom: 2%;  }
+.club_img{ width:30%; animation-iteration-count:infinite; animation-timing-function:linear; animation-duration:15s;}
+.border_radius_anime1{  animation-name: flame_anime1;}  
+.border_radius_anime2{  animation-name: flame_anime2;}  
+.border_radius_anime3{  animation-name: flame_anime3;}  
+.border_radius_anime4{  animation-name: flame_anime4;}  
+.border_radius_anime5{  animation-name: flame_anime5;}  
+.border_radius_anime6{  animation-name: flame_anime6;}  
+.border_radius_anime7{  animation-name: flame_anime7;}  
+.border_radius_anime8{  animation-name: flame_anime8;}
+.text_part h1{
     color:rgb(105, 46, 19);
     font-size:x-large;
     font-weight:bold;
@@ -256,48 +277,31 @@ margin-bottom: 2%;  }
     border-width: 5px;
     padding: 5px;
     background-color:rgba(248, 192, 169, 0.801);}
-  .text_part h2{color:rgb(105, 46, 19);
-      font-size: large;
-      font-weight:bold;
-      text-shadow: 1.5px 1.5px 1.5px whitesmoke; }
-  .club_introduction,.coach_introduction, .text_part{  margin-bottom: 5%;}
-  .text_part h1{  margin-bottom: 2%;}
-  #flower_anime_upper,#flower_anime_bottom {text-align: center;}
-  #flower_anime_bottom {  margin-top: 1.2%;}
-  .coach_img_part{text-align: center;}
-  
+.text_part h2{color:rgb(105, 46, 19);
+    font-size: large;
+    font-weight:bold;
+    text-shadow: 1.5px 1.5px 1.5px whitesmoke; }
+/*コーチのプロフィール*/   
+.club_introduction,.coach_introduction, .text_part{  margin-bottom: 5%;}
+.text_part h1{  margin-bottom: 2%;}
+#flower_anime_upper,#flower_anime_bottom {text-align: center;}
+#flower_anime_bottom {  margin-top: 1.2%;}
+.coach_img_part{text-align: center;}
+/*これまでの活動*/  
   .common_flame #history_table th{
     font-size: 15px;
     color:rgb(78, 88, 99);
     table-layout: fixed;
     border-style:outset;
-    border-width: 2px;
-   }
+    border-width: 2px;}
 #history_table{
     margin-left:auto;
-    margin-right:auto;
-}
-       
-/*散打のページ*/
-  .item_img_1,.item_img_2,.item_img_3,.item_img_4,.item_img_5,.item_img_6_1,.item_img_6_2,.item_img_7
-  {shape-outside: circle(); border-radius: 40%;margin:2%;}
-  .item_img_1,.item_img_3,.item_img_5,.item_img_6_2,.item_img_7{float:right}
-  .item_img_2,.item_img_4,.item_img_6_1{float:left}
-  .div_item_img_1,.div_item_img_2,.div_item_img_3,.div_item_img_4,.div_item_img_5,.div_item_img_6{margin:3% 0 3% 0;}
-  .item_section .item_div h1{
-    color:rgb(7, 122, 3);
-      font-size:larger;
-      
-      text-shadow: 1.5px 1.5px 1.5px whitesmoke;
-      text-align:center;
-      border-style:double;
-      border-width: 5px;
-      padding: 5px;
-      background-color:rgba(140, 255, 217, 0.801);}
+    margin-right:auto;}
+
 
 
 /*　套路のページ */
- .menpai_img {width: 90%;
+.menpai_img {width: 90%;
 	margin-right:auto;
     margin-left:auto;
 	padding: 2%;
@@ -305,7 +309,6 @@ margin-bottom: 2%;  }
 	border-radius: 3px;}
 .mainimage{    text-align: center;}
 .mainimage>img{width:100%;}
-
 .mini_menpai_imgs li {float: left;
 	margin: 5px 2.5px 5px 2.5px;
 	border: 4px solid #bdd4dd;
@@ -315,54 +318,68 @@ margin-bottom: 2%;  }
 .taolu_img_secondline_float_clear{ clear:both;}
 .mini_imgs_block{ margin-left:10px;}
 
+       
+/*sanda 散打のページ*/
+  .item_img_1,.item_img_2,.item_img_3,.item_img_4,.item_img_5,.item_img_6_1,.item_img_6_2,.item_img_7
+  {shape-outside: circle(); border-radius: 40%;margin:1%; width:55%;}
+  .item_img_1,.item_img_3,.item_img_5,.item_img_6_2,.item_img_7{float:right}
+  .item_img_2,.item_img_4,.item_img_6_1{float:left}
+  .div_item_img_1,.div_item_img_2,.div_item_img_3,.div_item_img_4,.div_item_img_5,.div_item_img_6{margin:3% 0 3% 0;}
+  .item_img_6_2{display: none;}
+  .item_section .item_div h1{
+    color:rgb(7, 122, 3);
+    font-size:larger;
+    text-shadow: 1.5px 1.5px 1.5px whitesmoke;
+    text-align:center;
+    border-style:double;
+    border-width:5px;
+    padding: 5px;
+    background-color:rgba(140, 255, 217, 0.801);}
 
+
+
+/*獅子舞のページ*/
+.fukidashi_shishimai_page{
+    position: relative;
+    display: block;
+    width: 60%;}
+.fukidashi_shishimai_page p{
+    text-align: center;}
+      
 
 /*メディアクエリ　デスクトップの指定*/
 @media(min-width: 600px){
-
-
-
-
 /*全体のレイアウト*/
 body{width:1178px; }
- 
-
-.container{display:flex;justify-content: space-between;
+.main_aside_layout{display:flex;justify-content: space-between;
         margin-bottom: 4rem; padding:1rem 2.5rem 2.5rem;}    
 /*メイン*/
-    main{width: 70%;
-        margin-bottom:0;}
-/*一番目のセクション*/
-.title_section p{
-            font-size:45px;margin-bottom: 15px;}
-
- /*二番目のセクション*/           
-.short_introduction p{
-            padding: 3% 0 3% 0;
-            font-size:x-large; }
-/*四番目のセクション 見学募集*/
-.news_section{background-image:url(image/sword_2.png),url(image/sanda_3.png); 
-        background-position: right,left;}
-.news_section h2{
-            font-size: large;
-            margin-bottom: 10px;
-        }   
+    main{width: 70%;margin-bottom:0;}
 /*アサイド*/
 aside{ width: 29%; }
 #titile_position{top:20%;}
 
-/*套路のミニ画像*/
-.taolu_img_secondline_float_clear{
-   display: none;
-}
-.mini_menpai_imgs li {
-	float: left;
-	margin: 10px 10px 5px 0;
-	border: 4px solid #bdd4dd;
-    border-style: double;
-    width: 10%;
-    height: auto;
-}
+/*インデックスページ*/
+/*一番目のセクション*/
+.title_section p{font-size:45px;margin-bottom: 15px;}
+/*二番目のセクション*/           
+.short_introduction p{
+            padding: 3% 0 3% 0;
+            font-size:x-large; }
+/*四番目のセクション 見学募集*/
+.news_section{background-image:url(image/sanda_3.png),url(image/sword_2.png); 
+background-size: 50.1%;} 
+.news_section h2{font-size: large; margin-bottom: 10px;}  
+/*夏休み自主練会のお知らせ*/
+.summer_info{
+    background-image:url(image/sword_2.png),url(image/sanda_3.png); 
+    background-position: right,left; }
+.summer_info h2{font-size: large; margin-bottom: 10px;}  
+
+/*our_introduction サークル紹介*/
+/*年表*/
+.common_flame #history_table th{
+    font-size: large;  }       
 
 /*　套路のページ */
 .menpai_img {width: 90%;
@@ -377,15 +394,27 @@ aside{ width: 29%; }
 	margin: 5px 10px 5px 10px;
     width:12%;}
 .mini_menpai_imgs li.selected {
-width:11%;}
+width:11.9%;}
 .meipai_name_title{margin-top: 13%; }
 .taolu_img_secondline_float_clear{ clear:both;}
-.mini_imgs_block{ margin-left:40px;}
+.mini_imgs_block{ margin-left:75px;}
+/*套路のミニ画像*/
+.taolu_img_secondline_float_clear{
+    display: none;}
+ .mini_menpai_imgs li {
+     float: left;
+     margin: 10px 10px 5px 0;
+     border: 4px solid #bdd4dd;
+     border-style: double;
+     width: 12.8%;
+     height: auto;}
+
+     
+/*sanda 散打のページ*/
+.item_img_1,.item_img_2,.item_img_3,.item_img_4,.item_img_5,.item_img_6_1,.item_img_7
+{shape-outside: circle(); border-radius: 40%;margin:1%; width:23%;}
+.item_img_6_2{display: block;width:13%;}
 
 
-/*サークル紹介　年表*/
-.common_flame #history_table th{
-    font-size: large;  }
 
-       
 }
