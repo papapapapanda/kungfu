@@ -1,4 +1,5 @@
 /*ページ全体　共通CSS body aside フッター　更新履歴　アニメーション*/
+html{font-size: 16px;}
 body{margin-right: auto;    margin-left : auto;    width:320px;  background-color: linen; font-family: 'DotGothic16', sans-serif;
     letter-spacing:1px;line-height:170%;}
 /*フッター*/
